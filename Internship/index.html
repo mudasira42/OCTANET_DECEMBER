@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style> 
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        height: 100%;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+        header{
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 20px;
+           color: black; 
+           background-color: blanchedalmond;
+           position: sticky;
+           top: 0;
+        }
+        header a{
+            color: inherit;
+        }
+        .logo{
+            flex: 1;
+            font-size: 30px;
+            
+        }
+        .center{
+            flex: 1;
+            font-size: 30px;
+        }
+        ul li{
+            list-style-type: none;
+            
+        }
+        header ul, .follow ul{
+            display: flex;
+            justify-content: flex-end;
+        }
+        ul li a {
+            padding: 5px 25px;
+            text-decoration: none;
+            color: rgb(161, 40, 40);
+            font-size: 19px;
+            font-weight: bolder;
+            
+        }
+
+        header li a:hover{
+            background-color: pink;
+            color: rgb(98, 35, 46);
+            border-radius: 53px;
+        }
+        footer {
+            
+            background-color: blanchedalmond;
+            
+        }
+        footer ion-icon{
+            padding: 20px 25px;
+            
+        }
+        footer a{
+            color: inherit;
+            font-size: 50px;
+            
+        }
+
+        .img{
+            background-image: url("food.jpeg");
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .food{
+            
+            font-style: normal;
+            font-family: "Bebas Neue", serif;
+            font-size: 100px;
+            padding-left: 50px;
+            color: rgb(161, 40, 40);
+            
+        }
+        .text{
+            padding: 10px 50px;
+            
+            
+            border: 1pt solid white;
+            border-radius: 100px;
+            background: linear-gradient(to right,rgba(255,245,225,0.8),rgba(250,280,197,0.8));
+            color:black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: italic;
+        }
+        footer .follow ul li a {
+            padding: 5px;
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+            font-weight: bolder;
+            margin: 25px;
+            padding: 25px;
+        }
+        .follow{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .maindiv{
+            display: flex;
+            gap: 100px;
+            background-color: rgb(87, 4, 4);
+            color: beige;
+            padding: 45px 25px;
+            
+        }
+        
+        
+        .follow li a:hover{
+            color: red
+        }
+        .but{
+           border-radius: 20px;
+           padding: 10px 20px;
+           font-size: 16px; /* Font size */
+           cursor: pointer;
+           width: fit-content;
+            border: none;
+            margin-left: 30px;
+        }
+        
+        .but2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+        .copyright{
+            display: flex;
+            justify-content: center;
+            padding:15px;
+            font-weight: bold;
+        }
+        /* For tablets and smaller screens */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end;
+    }
+
+    ul li a {
+        font-size: 16px;
+        padding: 5px 15px;
+    }
+
+    .img {
+        height: 70vh; 
+        background-position: top;
+    }
+
+    .food {
+        font-size: 60px;
+        padding-left: 20px;
+    }
+
+    .text {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .but {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .maindiv {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .maindiv .link h3 {
+        font-size: 18px;
+    }
+
+    footer .follow ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .follow ul li a {
+        font-size: 24px;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .img {
+        height: 50vh;
+    }
+
+    .food {
+        font-size: 40px;
+        padding-left: 10px;
+    }
+
+    .text {
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+
+    .but {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .maindiv {
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .maindiv .link ul li a {
+        font-size: 14px;
+    }
+
+    footer .follow ul li a {
+        font-size: 20px;
+    }
+
+    footer .follow h3 {
+        font-size: 16px;
+    }
+
+    .copyright {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+        
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <a href="#">
+            <ion-icon name="restaurant-outline"></ion-icon>
+        </a>
+        </div>
+        <div class="center">
+        <a href="#">
+        <ion-icon name="search-outline" ></ion-icon>
+        </a>
+    </div>
+    <div >
+        <ul>
+        <li><a href="breakfast.html">Breakfast</a></li>
+        <li><a href="lunch.html">Lunch</a></li>
+        <li><a href="dinner.html">Dinner</a></li>
+        <li><a href="#"><ion-icon name="cart-outline"></ion-icon></a></li>
+        </ul>
+    </div>
+    </header>
+    <main>
+        <div class="img">
+            <div class="food" id="foods">SAVORY BITES</div>
+            <div class="but2">
+            <div class="text">
+                Our easy-to-use online platform allows you to <br> browse our diverse menu, place orders, and have them delivered <br> swiftly to your doorstep. 
+                </div>
+                <button class="but">Learn More ☞</button>
+            </div>
+            
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="follow">
+        <h3>FOLLOW US ON:</h3>
+        
+        
+        <ul >
+           <li> <a href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+            </a> </li>
+            
+           
+               <li> <a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                </li>
+                
+                <li>
+                    <a href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <li>
+
+                        <li>
+                           
+                                    <a href="#">
+                                        <ion-icon name="logo-youtube"></ion-icon>
+                                    </a>
+                                    </li>
+                            
+                </ul>
+                </div>
+                
+                <div class="maindiv">
+                    <div class="link"><h3>Quick Links</h3>
+                        <ul>
+                            <li ><a href="#" style="color: azure;">About Us</a></li>
+                            <li><a href="#" style="color: azure;">Contact Us</a></li>
+                            <li><a href="#"style="color: azure;" >FAQs</a></li>
+                            
+                            </ul>
+                        
+                    </div>
+                    
+                    <div class="link"><h3>Contact Us</h3>
+                        <ul>
+                            <li><a href="#"style="color: azure;" >support@savorybites.com</a></li>
+                            <li><a href="#"style="color: azure;" >+91-0123456789</a></li>
+                            
+                            </ul>
+                        
+                    </div>
+
+                    <div class="link"><h3>Policy</h3>
+                        <ul>
+                            <li><a href="#"style="color: azure;" >Privacy Policy</a></li>
+                            <li><a href="#"style="color: azure;" >Terms and conditons</a></li>
+                            
+                            </ul>
+                        
+                    </div>
+                    
+
+                    <div class="link"><h3>Feedback</h3>
+                        
+                          <textarea placeholder="Feedback"></textarea> <br>
+                            <button type="submit" style="padding: 5px 10px; border-radius: 5px; background-color: burlywood; font-size: 15px;">Submit</button>
+                            
+                    </div>
+                </div>
+                
+           
+    </footer>
+    <div class="copyright">
+        Copyright© 2024 Savory Bites. All rights reserved.
+
+    </div>
+
+    
+    
+    
+     <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Animation Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            
+            const foodText = document.getElementById("foods");
+            foodText.style.animation = "fadeInUp 2s ease forwards";
+        });
+    </script>
+</body>
+</html>
